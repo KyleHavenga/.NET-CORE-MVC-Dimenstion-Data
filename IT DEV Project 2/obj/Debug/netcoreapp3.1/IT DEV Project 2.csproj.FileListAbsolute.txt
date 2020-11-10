@@ -1,0 +1,37 @@
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\IT DEV Project 2.exe
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\IT DEV Project 2.deps.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\IT DEV Project 2.runtimeconfig.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\IT DEV Project 2.runtimeconfig.dev.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\IT DEV Project 2.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\IT DEV Project 2.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\IT DEV Project 2.Views.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\bin\Debug\netcoreapp3.1\IT DEV Project 2.Views.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.csprojAssemblyReference.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.AssemblyInfoInputs.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.AssemblyInfo.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.csproj.CoreCompileInputs.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.RazorAssemblyInfo.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.RazorAssemblyInfo.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.TagHelpers.input.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.TagHelpers.output.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.RazorCoreGenerate.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.RazorTargetAssemblyInfo.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.RazorTargetAssemblyInfo.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.Views.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\staticwebassets\IT DEV Project 2.StaticWebAssets.Manifest.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\staticwebassets\IT DEV Project 2.StaticWebAssets.xml
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.genruntimeconfig.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.csproj.CopyComplete
