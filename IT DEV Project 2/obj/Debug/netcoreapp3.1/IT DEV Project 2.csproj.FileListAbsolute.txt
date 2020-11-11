@@ -35,3 +35,4 @@ C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreap
 C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.pdb
 C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.genruntimeconfig.cache
 C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\IT DEV Project 2.csproj.CopyComplete
+C:\Users\Kyle\source\repos\IT DEV Project 2\IT DEV Project 2\obj\Debug\netcoreapp3.1\Razor\Views\Home\LoginPage.cshtml.g.cs

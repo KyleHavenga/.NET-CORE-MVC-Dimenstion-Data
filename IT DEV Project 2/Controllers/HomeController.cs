@@ -28,6 +28,11 @@ namespace IT_DEV_Project_2.Controllers
             return View();
         }
 
+        public IActionResult LoginPage()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
