@@ -1,0 +1,81 @@
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Project2 Dimention Data.exe
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Project2 Dimention Data.deps.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Project2 Dimention Data.runtimeconfig.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Project2 Dimention Data.runtimeconfig.dev.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Project2 Dimention Data.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Project2 Dimention Data.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Project2 Dimention Data.Views.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Project2 Dimention Data.Views.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.csprojAssemblyReference.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.AssemblyInfoInputs.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.AssemblyInfo.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.RazorAssemblyInfo.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.RazorAssemblyInfo.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.TagHelpers.input.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.TagHelpers.output.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.RazorCoreGenerate.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.RazorTargetAssemblyInfo.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.RazorTargetAssemblyInfo.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.Views.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\staticwebassets\Project2 Dimention Data.StaticWebAssets.Manifest.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\staticwebassets\Project2 Dimention Data.StaticWebAssets.xml
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.genruntimeconfig.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.csproj.CopyComplete
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.csproj.CoreCompileInputs.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.MvcApplicationPartsAssemblyInfo.cache
