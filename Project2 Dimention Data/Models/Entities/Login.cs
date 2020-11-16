@@ -14,6 +14,7 @@ namespace Project2_Dimention_Data.Models.Entities
         public string SurnameUser { get; set; }
         public string UserEmail { get; set; }
         public string UserRole { get; set; }
+        public string Id { get; set; }
 
         public virtual PrimaryTable EmpNumNavigation { get; set; }
     }

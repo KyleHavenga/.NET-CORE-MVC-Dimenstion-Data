@@ -7,6 +7,11 @@ namespace Project2_Dimention_Data.Models.Entities
 {
     public partial class PrimaryTable
     {
+        public PrimaryTable()
+        {
+            Logins = new HashSet<Login>();
+        }
+
         public int EmpNumber { get; set; }
         public string MaritalStatus { get; set; }
         public int? Age { get; set; }
@@ -17,5 +22,7 @@ namespace Project2_Dimention_Data.Models.Entities
         public int? Education { get; set; }
         public string EducationField { get; set; }
         public string Gender { get; set; }
+
+        public virtual ICollection<Login> Logins { get; set; }
     }
 }

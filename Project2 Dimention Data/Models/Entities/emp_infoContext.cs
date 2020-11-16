@@ -25,6 +25,15 @@ namespace Project2_Dimention_Data.Models.Entities
         public virtual DbSet<Rate> Rates { get; set; }
         public virtual DbSet<Salary> Salaries { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("Server=tcp:itdevs.database.windows.net,1433;Initial Catalog=emp_info;Persist Security Info=False;User ID=KyleHavenga;Password=HavengA2014;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            }
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<EmployeePerf>(entity =>
@@ -108,9 +117,12 @@ namespace Project2_Dimention_Data.Models.Entities
 
             modelBuilder.Entity<Login>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.ToTable("login");
+
+                entity.Property(e => e.Id)
+                    .HasMaxLength(100)
+                    .IsUnicode(false)
+                    .HasColumnName("id");
 
                 entity.Property(e => e.EmpNum).HasColumnName("emp_num");
 
@@ -145,7 +157,7 @@ namespace Project2_Dimention_Data.Models.Entities
                     .HasColumnName("user_role");
 
                 entity.HasOne(d => d.EmpNumNavigation)
-                    .WithMany()
+                    .WithMany(p => p.Logins)
                     .HasForeignKey(d => d.EmpNum)
                     .HasConstraintName("FK__login__emp_num__6B24EA82");
             });
