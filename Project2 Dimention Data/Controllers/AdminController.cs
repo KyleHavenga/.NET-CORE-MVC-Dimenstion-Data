@@ -56,7 +56,7 @@ namespace Project2_Dimention_Data.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EmpNum,Passwordhash,Passwordsalt,NameUser,SurnameUser,UserEmail,UserRole,Id")] Login login)
+        public async Task<IActionResult> Create([Bind("EmpNum,Passwordhash,Passwordsalt,NameUser,SurnameUser,UserEmail,UserRole")] Login login)
         {
             if (ModelState.IsValid)
             {
