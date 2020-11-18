@@ -10,6 +10,7 @@ namespace Project2_Dimention_Data.Models.Entities
         public int? EmpNumber { get; set; }
         public int? MonthlyIncome { get; set; }
         public int? PercentSalaryHike { get; set; }
+        public int SalaryId { get; set; }
 
         public virtual PrimaryTable EmpNumberNavigation { get; set; }
     }

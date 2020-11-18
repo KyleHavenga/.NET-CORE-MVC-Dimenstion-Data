@@ -12,6 +12,7 @@ namespace Project2_Dimention_Data.Models.Entities
         public int? JobSat { get; set; }
         public int? RelationshipSat { get; set; }
         public int? WorkLifeBalance { get; set; }
+        public int EmpId { get; set; }
 
         public virtual PrimaryTable EmpNumberNavigation { get; set; }
     }

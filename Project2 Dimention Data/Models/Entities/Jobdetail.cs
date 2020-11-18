@@ -22,6 +22,7 @@ namespace Project2_Dimention_Data.Models.Entities
         public int? YearsCurrentRole { get; set; }
         public int? YearsCurrentManager { get; set; }
         public int? YearsAtCompany { get; set; }
+        public int JobDetailsId { get; set; }
 
         public virtual PrimaryTable EmpNumberNavigation { get; set; }
     }

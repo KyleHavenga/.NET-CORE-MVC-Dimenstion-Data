@@ -1,0 +1,28 @@
+﻿@inject Project2_Dimention_Data.Services.Authenticate AuthenticationService
+
+@{
+    var authInfo = AuthenticationService.ScopeAuthInfo;
+}
+
+@if (authInfo.IsAuthenticated)
+{
+    <form asp-area="" asp-controller="Accounts" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+        <ul class="nav navbar-nav navbar-right">
+            <div class="tile">
+                <li>
+                    <a class="alert-heading text-light">Hello @authInfo.NameUser!</a>
+                </li>
+                <li>
+                    <button type="submit" class="btn  navbar-btn navbar-link text-light">Log out</button>
+                </li>
+            </div>
+        </ul>
+    </form>
+}
+else
+{
+<ul class="nav navbar-nav navbar-right text-light">
+    <li><a class="nav-link text-light" asp-area="" asp-controller="Accounts" asp-action="Login">Log in</a></li>
+    
+</ul>
+}

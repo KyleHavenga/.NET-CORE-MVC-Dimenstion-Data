@@ -1,0 +1,183 @@
+﻿@model IEnumerable<Project2_Dimention_Data.Models.Entities.Jobdetail>
+@inject Project2_Dimention_Data.Services.Authenticate AuthenticationService
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    var authInfo = AuthenticationService.ScopeAuthInfo;
+}
+    <h1>Job Details</h1>
+
+    <p>
+        <a class="link text-dark" asp-action="Create">Create New</a>
+    </p>
+    <table class="table .table-striped .table-sm">
+        <thead class="thead-dark">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Attrition)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BusinessTravel)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Department)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmployeeCount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.JobInvolvement)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.JobLevel)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.JobRole)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Overtime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StandardHours)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StockOptionLevel)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.YearsLastPromotion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.YearsCurrentRole)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.YearsCurrentManager)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.YearsAtCompany)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmpNumberNavigation)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                @if (authInfo.UserRole == "Admin")
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Attrition)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BusinessTravel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Department)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmployeeCount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.JobInvolvement)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.JobLevel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.JobRole)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Overtime)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StandardHours)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StockOptionLevel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.YearsLastPromotion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.YearsCurrentRole)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.YearsCurrentManager)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.YearsAtCompany)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmpNumberNavigation.EmpNumber)
+                        </td>
+                        <td>
+                            <a class="link text-dark" asp-action="Edit" asp-route-id="@item.JobDetailsId">Edit</a> |
+                            <a class="link text-dark" asp-action="Details" asp-route-id="@item.JobDetailsId">Details</a> |
+                            <a class="link text-dark" asp-action="Delete" asp-route-id="@item.JobDetailsId">Delete</a>
+                        </td>
+                    </tr>
+
+                }
+                @if (authInfo.UserRole == "User" && item.EmpNumber == authInfo.EmpNum)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Attrition)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BusinessTravel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Department)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmployeeCount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.JobInvolvement)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.JobLevel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.JobRole)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Overtime)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StandardHours)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StockOptionLevel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.YearsLastPromotion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.YearsCurrentRole)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.YearsCurrentManager)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.YearsAtCompany)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmpNumberNavigation.EmpNumber)
+                        </td>
+                        <td>
+                            <a class="link text-dark" asp-action="Details" asp-route-id="@item.JobDetailsId">Details</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+

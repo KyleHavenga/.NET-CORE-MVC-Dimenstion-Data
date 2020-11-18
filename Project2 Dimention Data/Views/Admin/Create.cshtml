@@ -1,67 +1,57 @@
-﻿@model Project2_Dimention_Data.Models.Entities.Login
+﻿@model Project2_Dimention_Data.Models.ViewModels.UserManagementCreate
 
 @{
     ViewData["Title"] = "Create";
 }
+<div class="container"> 
+<h1>Register</h1>
 
-<h1>Create</h1>
-
-<h4>Login</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="EmpNum" class="control-label"></label>
-                <select asp-for="EmpNum" class ="form-control" asp-items="ViewBag.EmpNum"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Passwordhash" class="control-label"></label>
-                <input asp-for="Passwordhash" class="form-control" />
+                <label asp-for="EmpNum" class="control-label"> Employee Number</label>
+                <select asp-for="EmpNum" class="form-control" asp-items="ViewBag.EmpNum"></select>
                 <span asp-validation-for="Passwordhash" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Passwordsalt" class="control-label"></label>
-                <input asp-for="Passwordsalt" class="form-control" />
-                <span asp-validation-for="Passwordsalt" class="text-danger"></span>
+                <label asp-for="Passwordhash" class="control-label"> Password</label>
+                <input asp-for="Passwordhash" class="form-control" />
+                <span asp-validation-for="Passwordhash" class="text-danger"></span>
+            </div><div class="form-group">
+                <label asp-for="ConfirmPassword" class="control-label"> Password</label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NameUser" class="control-label"></label>
+                <label asp-for="NameUser" class="control-label">Firts Name</label>
                 <input asp-for="NameUser" class="form-control" />
                 <span asp-validation-for="NameUser" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SurnameUser" class="control-label"></label>
+                <label asp-for="SurnameUser" class="control-label">Last Name</label>
                 <input asp-for="SurnameUser" class="form-control" />
                 <span asp-validation-for="SurnameUser" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="UserEmail" class="control-label"></label>
+                <label asp-for="UserEmail" class="control-label">Email</label>
                 <input asp-for="UserEmail" class="form-control" />
                 <span asp-validation-for="UserEmail" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="UserRole" class="control-label"></label>
-                <input asp-for="UserRole" class="form-control" />
-                <span asp-validation-for="UserRole" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn text-light bg-dark" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="nav-link text-dark"  asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+    </div>

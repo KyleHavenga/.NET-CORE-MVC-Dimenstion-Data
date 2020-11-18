@@ -3,58 +3,57 @@
 @{
     ViewData["Title"] = "Details";
 }
+<div class="container">
+    <h1>User Details</h1>
 
-<h1>Details</h1>
-
-<div>
-    <h4>Login</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Passwordhash)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Passwordhash)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Passwordsalt)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Passwordsalt)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NameUser)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NameUser)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SurnameUser)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SurnameUser)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserEmail)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserEmail)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserRole)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserRole)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EmpNumNavigation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EmpNumNavigation.EmpNumber)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Passwordhash)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Passwordhash)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Passwordsalt)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Passwordsalt)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.NameUser)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NameUser)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.SurnameUser)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.SurnameUser)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.UserEmail)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.UserEmail)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.UserRole)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.UserRole)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EmpNumNavigation)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EmpNumNavigation.EmpNumber)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a class="nav-link text-dark" asp-action="Index">Back to List</a>
+    </div>
+    </div>

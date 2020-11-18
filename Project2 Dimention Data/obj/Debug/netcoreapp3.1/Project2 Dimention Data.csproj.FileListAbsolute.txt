@@ -32,7 +32,6 @@ C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\ne
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.pdb
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.genruntimeconfig.cache
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.csproj.CopyComplete
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -77,27 +76,6 @@ C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\ne
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.Text.Json.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
@@ -170,10 +148,78 @@ C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\ne
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.csproj.CoreCompileInputs.cache
-C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Create.cshtml.g.cs
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Delete.cshtml.g.cs
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Details.cshtml.g.cs
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Edit.cshtml.g.cs
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\MainUser\Create.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\MainUser\Delete.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\MainUser\Details.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\MainUser\Edit.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\MainUser\Index.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\Project2DimentionData20201117171914 - Web Deploy\profile.arm.json
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\ServiceStack.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\ServiceStack.Client.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\ServiceStack.Common.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\ServiceStack.Interfaces.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\ServiceStack.Text.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.Private.ServiceModel.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.ServiceModel.Primitives.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.ServiceModel.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Accounts\Login.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.csproj.CoreCompileInputs.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Project2 Dimention Data.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Jobdetails\Create.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Jobdetails\Delete.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Jobdetails\Details.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Jobdetails\Edit.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Jobdetails\Index.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\EmployeePerfs\Create.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\EmployeePerfs\Delete.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\EmployeePerfs\Details.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\EmployeePerfs\Edit.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\EmployeePerfs\Index.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\ManagerRatings\Create.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\ManagerRatings\Delete.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\ManagerRatings\Details.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\ManagerRatings\Edit.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\ManagerRatings\Index.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Rates\Create.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Rates\Delete.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Rates\Details.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Rates\Edit.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Rates\Index.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Salaries\Create.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Salaries\Delete.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Salaries\Details.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Salaries\Edit.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Salaries\Index.cshtml.g.cs

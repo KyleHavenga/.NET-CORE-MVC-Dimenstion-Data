@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Project2_Dimention_Data.Models.Entities.Rate>
+@inject Project2_Dimention_Data.Services.Authenticate AuthenticationService
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    var authInfo = AuthenticationService.ScopeAuthInfo;
+}
+
+<div class="container">
+<h1>User Rates</h1>
+
+<p>
+    <a class="link text-dark" asp-action="Create">Create New</a>
+</p>
+<table class="table  .table-striped .table-xl">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HourlyRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthlyRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DailyRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpNumberNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        @foreach (var item in Model)
+        {
+            @if (authInfo.JobRole == "Manager" || authInfo.UserRole == "Admin")
+            {
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HourlyRate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MonthlyRate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DailyRate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmpNumberNavigation.EmpNumber)
+                    </td>
+                    <td>
+                        <a class="link text-dark" asp-action="Edit" asp-route-id="@item.RatesId">Edit</a> |
+                        <a class="link text-dark" asp-action="Details" asp-route-id="@item.RatesId">Details</a> |
+                        <a class="link text-dark" asp-action="Delete" asp-route-id="@item.RatesId">Delete</a>
+                    </td>
+                </tr>
+            }
+            @if (authInfo.UserRole == "User" && authInfo.EmpNum == item.EmpNumber)
+            {
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HourlyRate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MonthlyRate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DailyRate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmpNumberNavigation.EmpNumber)
+                    </td>
+                    <td>
+
+                        <a class="link text-dark" asp-action="Details" asp-route-id="@item.RatesId">Details</a>
+
+                    </td>
+                </tr>
+            }
+        }
+
+
+    </tbody>
+</table>
+</div>

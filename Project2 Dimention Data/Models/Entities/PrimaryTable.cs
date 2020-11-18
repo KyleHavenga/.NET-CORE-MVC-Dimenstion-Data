@@ -9,7 +9,12 @@ namespace Project2_Dimention_Data.Models.Entities
     {
         public PrimaryTable()
         {
+            EmployeePerves = new HashSet<EmployeePerf>();
+            Jobdetails = new HashSet<Jobdetail>();
             Logins = new HashSet<Login>();
+            ManagerRatings = new HashSet<ManagerRating>();
+            Rates = new HashSet<Rate>();
+            Salaries = new HashSet<Salary>();
         }
 
         public int EmpNumber { get; set; }
@@ -23,6 +28,11 @@ namespace Project2_Dimention_Data.Models.Entities
         public string EducationField { get; set; }
         public string Gender { get; set; }
 
+        public virtual ICollection<EmployeePerf> EmployeePerves { get; set; }
+        public virtual ICollection<Jobdetail> Jobdetails { get; set; }
         public virtual ICollection<Login> Logins { get; set; }
+        public virtual ICollection<ManagerRating> ManagerRatings { get; set; }
+        public virtual ICollection<Rate> Rates { get; set; }
+        public virtual ICollection<Salary> Salaries { get; set; }
     }
 }

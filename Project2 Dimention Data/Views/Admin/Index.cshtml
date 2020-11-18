@@ -1,25 +1,24 @@
 ﻿@model IEnumerable<Project2_Dimention_Data.Models.Entities.Login>
+@inject Project2_Dimention_Data.Services.Authenticate AuthenticationService
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+@{
+    var authInfo = AuthenticationService.ScopeAuthInfo;
+}
+<div class="container">
+<h1>Admin</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="link text-dark" asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table  .table-striped .table-xl">
+    <thead class="thead-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.EmpNum)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Passwordhash)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Passwordsalt)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.NameUser)
@@ -40,38 +39,34 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.EmpNum)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Passwordhash)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Passwordsalt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NameUser)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurnameUser)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserEmail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserRole)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EmpNumNavigation.EmpNumber)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.EmpNum)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NameUser)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SurnameUser)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.UserEmail)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.UserRole)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.EmpNumNavigation.EmpNumber)
+    </td>
+    <td>
+        @if (authInfo.EmpNum == 4)
+        {<a class="link text-dark" asp-action="Edit" asp-route-id="@item.Id">Edit</a>} |
+        <a class="link text-dark" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+        <a class="link text-dark" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+    </td>
+</tr>}
     </tbody>
 </table>
+    </div>

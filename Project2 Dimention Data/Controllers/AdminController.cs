@@ -5,19 +5,26 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Project2_Dimention_Data.Filters;
 using Project2_Dimention_Data.Models.Entities;
+using Project2_Dimention_Data.Models.ViewModels;
+using Project2_Dimention_Data.Services;
+using ServiceStack;
 
 namespace Project2_Dimention_Data.Controllers
 {
+    
     public class AdminController : Controller
     {
         private readonly emp_infoContext _context;
+        private readonly Cryptography _cryptography;
+        public AdminController(emp_infoContext context, Cryptography cryptography)
 
-        public AdminController(emp_infoContext context)
         {
             _context = context;
+            _cryptography = cryptography;
         }
-
+        [Authentication(userRoles: "Admin")]
         // GET: Admin
         public async Task<IActionResult> Index()
         {
@@ -45,6 +52,7 @@ namespace Project2_Dimention_Data.Controllers
         }
 
         // GET: Admin/Create
+
         public IActionResult Create()
         {
             ViewData["EmpNum"] = new SelectList(_context.PrimaryTables, "EmpNumber", "EmpNumber");
@@ -56,16 +64,41 @@ namespace Project2_Dimention_Data.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EmpNum,Passwordhash,Passwordsalt,NameUser,SurnameUser,UserEmail,UserRole")] Login login)
+        public async Task<IActionResult> Create(UserManagementCreate model)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(login);
+                
+                var passwordSalt = Guid.NewGuid().ToString();
+                var user = new Login()
+                {
+                    NameUser = model.NameUser,
+                    SurnameUser = model.SurnameUser,
+                    UserEmail = model.UserEmail,
+                    Passwordsalt = passwordSalt,
+                    Passwordhash = _cryptography.HashSHA256(model.Passwordhash + passwordSalt),
+                    UserRole = "User",
+                    Id = random_id(),
+                    EmpNum = int.Parse(model.EmpNum),
+                };
+
+                _context.Add(user);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
-            ViewData["EmpNum"] = new SelectList(_context.PrimaryTables, "EmpNumber", "EmpNumber", login.EmpNum);
-            return View(login);
+            return View(model);
+        }
+        private readonly Random _random = new Random();
+        public string random_id()
+        {
+            Random random = new Random();
+            int length = 16;
+            var rString = "";
+            for (var i = 0; i < length; i++)
+            {
+                rString += ((char)(random.Next(1, 26) + 64)).ToString().ToLower();
+            }
+            return rString;
         }
 
         // GET: Admin/Edit/5

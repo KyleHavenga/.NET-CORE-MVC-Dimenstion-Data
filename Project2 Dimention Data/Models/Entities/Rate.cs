@@ -11,6 +11,7 @@ namespace Project2_Dimention_Data.Models.Entities
         public int? HourlyRate { get; set; }
         public int? MonthlyRate { get; set; }
         public int? DailyRate { get; set; }
+        public int RatesId { get; set; }
 
         public virtual PrimaryTable EmpNumberNavigation { get; set; }
     }

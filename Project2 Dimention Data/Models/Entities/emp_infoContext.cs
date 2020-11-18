@@ -25,22 +25,18 @@ namespace Project2_Dimention_Data.Models.Entities
         public virtual DbSet<Rate> Rates { get; set; }
         public virtual DbSet<Salary> Salaries { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=tcp:itdevs.database.windows.net,1433;Initial Catalog=emp_info;Persist Security Info=False;User ID=KyleHavenga;Password=HavengA2014;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
-            }
-        }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<EmployeePerf>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.EmpId)
+                    .HasName("PK__Employee__AFB3EC6DF6BA8F64");
 
                 entity.ToTable("EmployeePerf");
+
+                entity.Property(e => e.EmpId).HasColumnName("empID");
 
                 entity.Property(e => e.EmpNumber).HasColumnName("emp_number");
 
@@ -53,16 +49,19 @@ namespace Project2_Dimention_Data.Models.Entities
                 entity.Property(e => e.WorkLifeBalance).HasColumnName("work_life_balance");
 
                 entity.HasOne(d => d.EmpNumberNavigation)
-                    .WithMany()
+                    .WithMany(p => p.EmployeePerves)
                     .HasForeignKey(d => d.EmpNumber)
                     .HasConstraintName("FK__EmployeeP__emp_n__5FB337D6");
             });
 
             modelBuilder.Entity<Jobdetail>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.JobDetailsId)
+                    .HasName("PK__jobdetai__D136C0208025B11E");
 
                 entity.ToTable("jobdetails");
+
+                entity.Property(e => e.JobDetailsId).HasColumnName("JobDetailsID");
 
                 entity.Property(e => e.Attrition)
                     .HasMaxLength(3)
@@ -110,7 +109,7 @@ namespace Project2_Dimention_Data.Models.Entities
                 entity.Property(e => e.YearsLastPromotion).HasColumnName("years_last_promotion");
 
                 entity.HasOne(d => d.EmpNumberNavigation)
-                    .WithMany()
+                    .WithMany(p => p.Jobdetails)
                     .HasForeignKey(d => d.EmpNumber)
                     .HasConstraintName("FK__jobdetail__emp_n__5DCAEF64");
             });
@@ -164,9 +163,12 @@ namespace Project2_Dimention_Data.Models.Entities
 
             modelBuilder.Entity<ManagerRating>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.RatingId)
+                    .HasName("PK__ManagerR__2D290D496DA942E8");
 
                 entity.ToTable("ManagerRating");
+
+                entity.Property(e => e.RatingId).HasColumnName("ratingID");
 
                 entity.Property(e => e.EmpNumber).HasColumnName("emp_number");
 
@@ -175,7 +177,7 @@ namespace Project2_Dimention_Data.Models.Entities
                 entity.Property(e => e.TrainingTimesLastYear).HasColumnName("training_times_last_year");
 
                 entity.HasOne(d => d.EmpNumberNavigation)
-                    .WithMany()
+                    .WithMany(p => p.ManagerRatings)
                     .HasForeignKey(d => d.EmpNumber)
                     .HasConstraintName("FK__ManagerRa__emp_n__656C112C");
             });
@@ -225,7 +227,10 @@ namespace Project2_Dimention_Data.Models.Entities
 
             modelBuilder.Entity<Rate>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.RatesId)
+                    .HasName("PK__Rates__4E33DFC334651313");
+
+                entity.Property(e => e.RatesId).HasColumnName("ratesID");
 
                 entity.Property(e => e.DailyRate).HasColumnName("daily_rate");
 
@@ -236,16 +241,16 @@ namespace Project2_Dimention_Data.Models.Entities
                 entity.Property(e => e.MonthlyRate).HasColumnName("monthly_rate");
 
                 entity.HasOne(d => d.EmpNumberNavigation)
-                    .WithMany()
+                    .WithMany(p => p.Rates)
                     .HasForeignKey(d => d.EmpNumber)
                     .HasConstraintName("FK__Rates__emp_numbe__619B8048");
             });
 
             modelBuilder.Entity<Salary>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.ToTable("Salary");
+
+                entity.Property(e => e.SalaryId).HasColumnName("salaryID");
 
                 entity.Property(e => e.EmpNumber).HasColumnName("emp_number");
 
@@ -254,7 +259,7 @@ namespace Project2_Dimention_Data.Models.Entities
                 entity.Property(e => e.PercentSalaryHike).HasColumnName("percent_salary_hike");
 
                 entity.HasOne(d => d.EmpNumberNavigation)
-                    .WithMany()
+                    .WithMany(p => p.Salaries)
                     .HasForeignKey(d => d.EmpNumber)
                     .HasConstraintName("FK__Salary__emp_numb__6383C8BA");
             });

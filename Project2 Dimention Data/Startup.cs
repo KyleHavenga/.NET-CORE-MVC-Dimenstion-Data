@@ -10,6 +10,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Project2_Dimention_Data.Models.Entities;
 using Microsoft.EntityFrameworkCore;
+using Project2_Dimention_Data.Services;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Logging;
+using ServiceStack.Auth;
 
 namespace Project2_Dimention_Data
 {
@@ -25,25 +31,24 @@ namespace Project2_Dimention_Data
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
             services.AddControllersWithViews();
+            services.Configure<AuthOptions>(Configuration);
 
             var connectionString = Configuration.GetConnectionString("Database");
             services.AddDbContext<emp_infoContext>(options => options.UseSqlServer(connectionString));
+            services.AddScoped<Authenticate>();
+            services.AddSingleton<ITempDataProvider, CookieTempDataProvider>();
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddTransient<Cryptography>();
+
         }
 
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -56,7 +61,15 @@ namespace Project2_Dimention_Data
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+
+                endpoints.MapControllerRoute(
+                    name: "UserManagement",
+                    pattern: "Management/User/{action=Index}/{id?}");
+                    
+        });
+
+
         }
     }
 }
+

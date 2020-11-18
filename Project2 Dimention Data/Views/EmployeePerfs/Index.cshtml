@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Project2_Dimention_Data.Models.Entities.EmployeePerf>
+@inject Project2_Dimention_Data.Services.Authenticate AuthenticationService
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+<h1>Employee Performance</h1>
+
+<p>
+    <a class="link text-dark" asp-action="Create">Create New</a>
+</p>
+<table class="table  .table-striped .table-xl">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EnvironmentSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RelationshipSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkLifeBalance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpNumberNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EnvironmentSat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JobSat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RelationshipSat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WorkLifeBalance)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmpNumberNavigation.EmpNumber)
+                </td>
+                <td>
+                    <a class="link text-dark" asp-action="Edit" asp-route-id="@item.EmpId">Edit</a> |
+                    <a class="link text-dark" asp-action="Details" asp-route-id="@item.EmpId">Details</a> |
+                    <a class="link text-dark" asp-action="Delete" asp-route-id="@item.EmpId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+    </div>

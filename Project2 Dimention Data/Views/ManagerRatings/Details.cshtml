@@ -1,0 +1,43 @@
+﻿@model Project2_Dimention_Data.Models.Entities.ManagerRating
+@inject Project2_Dimention_Data.Services.Authenticate AuthenticationService
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+@{
+    var authInfo = AuthenticationService.ScopeAuthInfo;
+}
+<div class="container">
+    <h1>Details</h1>
+
+    <div>
+        <h4>ManagerRating</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.PerformanceRating)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.PerformanceRating)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TrainingTimesLastYear)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TrainingTimesLastYear)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EmpNumberNavigation)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EmpNumberNavigation.EmpNumber)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        @if (authInfo.JobRole == "Manager")
+        {<a asp-action="Edit" asp-route-id="@Model.RatingId">Edit</a>} |
+        <a class="nav-link text-dark" asp-action="Index">Back to List</a>
+    </div>
+    </div>
