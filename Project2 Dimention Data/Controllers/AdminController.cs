@@ -25,14 +25,12 @@ namespace Project2_Dimention_Data.Controllers
             _cryptography = cryptography;
         }
         [Authentication(userRoles: "Admin")]
-        // GET: Admin
         public async Task<IActionResult> Index()
         {
             var emp_infoContext = _context.Logins.Include(l => l.EmpNumNavigation);
             return View(await emp_infoContext.ToListAsync());
         }
 
-        // GET: Admin/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -51,7 +49,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(login);
         }
 
-        // GET: Admin/Create
+
 
         public IActionResult Create()
         {
@@ -59,9 +57,6 @@ namespace Project2_Dimention_Data.Controllers
             return View();
         }
 
-        // POST: Admin/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(UserManagementCreate model)
@@ -100,8 +95,6 @@ namespace Project2_Dimention_Data.Controllers
             }
             return rString;
         }
-
-        // GET: Admin/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -118,9 +111,6 @@ namespace Project2_Dimention_Data.Controllers
             return View(login);
         }
 
-        // POST: Admin/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("EmpNum,Passwordhash,Passwordsalt,NameUser,SurnameUser,UserEmail,UserRole,Id")] Login login)
@@ -154,7 +144,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(login);
         }
 
-        // GET: Admin/Delete/5
+  
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -173,7 +163,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(login);
         }
 
-        // POST: Admin/Delete/5
+    
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)

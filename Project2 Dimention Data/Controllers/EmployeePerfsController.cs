@@ -20,14 +20,12 @@ namespace Project2_Dimention_Data.Controllers
             _context = context;
         }
 
-        // GET: EmployeePerfs
         public async Task<IActionResult> Index()
         {
             var emp_infoContext = _context.EmployeePerves.Include(e => e.EmpNumberNavigation);
             return View(await emp_infoContext.ToListAsync());
         }
 
-        // GET: EmployeePerfs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -46,16 +44,13 @@ namespace Project2_Dimention_Data.Controllers
             return View(employeePerf);
         }
 
-        // GET: EmployeePerfs/Create
         public IActionResult Create()
         {
             ViewData["EmpNumber"] = new SelectList(_context.PrimaryTables, "EmpNumber", "EmpNumber");
             return View();
         }
 
-        // POST: EmployeePerfs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("EmpNumber,EnvironmentSat,JobSat,RelationshipSat,WorkLifeBalance,EmpId")] EmployeePerf employeePerf)
@@ -70,7 +65,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(employeePerf);
         }
 
-        // GET: EmployeePerfs/Edit/5
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -87,9 +82,6 @@ namespace Project2_Dimention_Data.Controllers
             return View(employeePerf);
         }
 
-        // POST: EmployeePerfs/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("EmpNumber,EnvironmentSat,JobSat,RelationshipSat,WorkLifeBalance,EmpId")] EmployeePerf employeePerf)
@@ -123,7 +115,6 @@ namespace Project2_Dimention_Data.Controllers
             return View(employeePerf);
         }
 
-        // GET: EmployeePerfs/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -142,7 +133,6 @@ namespace Project2_Dimention_Data.Controllers
             return View(employeePerf);
         }
 
-        // POST: EmployeePerfs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

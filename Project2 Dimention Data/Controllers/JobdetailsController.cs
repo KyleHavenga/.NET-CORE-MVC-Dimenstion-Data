@@ -20,14 +20,12 @@ namespace Project2_Dimention_Data.Controllers
             _context = context;
         }
 
-        // GET: Jobdetails
         public async Task<IActionResult> Index()
         {
             var emp_infoContext = _context.Jobdetails.Include(j => j.EmpNumberNavigation);
             return View(await emp_infoContext.ToListAsync());
         }
 
-        // GET: Jobdetails/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -46,16 +44,14 @@ namespace Project2_Dimention_Data.Controllers
             return View(jobdetail);
         }
 
-        // GET: Jobdetails/Create
+
         public IActionResult Create()
         {
             ViewData["EmpNumber"] = new SelectList(_context.PrimaryTables, "EmpNumber", "EmpNumber");
             return View();
         }
 
-        // POST: Jobdetails/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("EmpNumber,Attrition,BusinessTravel,Department,EmployeeCount,JobInvolvement,JobLevel,JobRole,Overtime,StandardHours,StockOptionLevel,YearsLastPromotion,YearsCurrentRole,YearsCurrentManager,YearsAtCompany,JobDetailsId")] Jobdetail jobdetail)
@@ -70,7 +66,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(jobdetail);
         }
 
-        // GET: Jobdetails/Edit/5
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -87,9 +83,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(jobdetail);
         }
 
-        // POST: Jobdetails/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("EmpNumber,Attrition,BusinessTravel,Department,EmployeeCount,JobInvolvement,JobLevel,JobRole,Overtime,StandardHours,StockOptionLevel,YearsLastPromotion,YearsCurrentRole,YearsCurrentManager,YearsAtCompany,JobDetailsId")] Jobdetail jobdetail)
@@ -123,7 +117,6 @@ namespace Project2_Dimention_Data.Controllers
             return View(jobdetail);
         }
 
-        // GET: Jobdetails/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -142,7 +135,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(jobdetail);
         }
 
-        // POST: Jobdetails/Delete/5
+
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

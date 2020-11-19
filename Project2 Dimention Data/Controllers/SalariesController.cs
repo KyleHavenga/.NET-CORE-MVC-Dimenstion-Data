@@ -20,14 +20,12 @@ namespace Project2_Dimention_Data.Controllers
             _context = context;
         }
 
-        // GET: Salaries
         public async Task<IActionResult> Index()
         {
             var emp_infoContext = _context.Salaries.Include(s => s.EmpNumberNavigation);
             return View(await emp_infoContext.ToListAsync());
         }
 
-        // GET: Salaries/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -46,16 +44,12 @@ namespace Project2_Dimention_Data.Controllers
             return View(salary);
         }
 
-        // GET: Salaries/Create
         public IActionResult Create()
         {
             ViewData["EmpNumber"] = new SelectList(_context.PrimaryTables, "EmpNumber", "EmpNumber");
             return View();
         }
 
-        // POST: Salaries/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("EmpNumber,MonthlyIncome,PercentSalaryHike,SalaryId")] Salary salary)
@@ -70,7 +64,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(salary);
         }
 
-        // GET: Salaries/Edit/5
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -87,9 +81,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(salary);
         }
 
-        // POST: Salaries/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("EmpNumber,MonthlyIncome,PercentSalaryHike,SalaryId")] Salary salary)
@@ -123,7 +115,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(salary);
         }
 
-        // GET: Salaries/Delete/5
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -142,7 +134,7 @@ namespace Project2_Dimention_Data.Controllers
             return View(salary);
         }
 
-        // POST: Salaries/Delete/5
+
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
