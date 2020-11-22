@@ -64,16 +64,16 @@ namespace Project2_Dimention_Data.Controllers
             if (ModelState.IsValid)
             {
                 
-                var passwordSalt = Guid.NewGuid().ToString();
+                var passwordSalt = Guid.NewGuid().ToString(); //Random Password Salt is created
                 var user = new Login()
                 {
                     NameUser = model.NameUser,
                     SurnameUser = model.SurnameUser,
                     UserEmail = model.UserEmail,
                     Passwordsalt = passwordSalt,
-                    Passwordhash = _cryptography.HashSHA256(model.Passwordhash + passwordSalt),
-                    UserRole = "User",
-                    Id = random_id(),
+                    Passwordhash = _cryptography.PassWordHashing(model.Passwordhash + passwordSalt), //Hashes the password before inserting into DB and also assignes passwordSalt
+                    UserRole = "User", // User role can be changed by an admin user to "Admin" to give a user admin privilages
+                    Id = random_id(), //Creates a random id
                     EmpNum = int.Parse(model.EmpNum),
                 };
 

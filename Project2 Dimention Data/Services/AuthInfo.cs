@@ -17,3 +17,5 @@ namespace Project2_Dimention_Data.Services
         public bool IsAuthenticated => (EmpNum > 0);
     }
 }
+
+// This class created a list structure for the information of a logged in user so that access can be restricted.

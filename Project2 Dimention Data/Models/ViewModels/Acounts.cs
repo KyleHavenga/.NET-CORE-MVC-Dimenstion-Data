@@ -11,11 +11,11 @@ namespace Project2_Dimention_Data.Models.ViewModels
 		public class AccountLogin
 		{
 			[Required]
-			[EmailAddress]
+			[EmailAddress] //Required and needs to be in the format of an email example@email.com
 			public string email { get; set; }
 
 			[Required]
-			[DataType(DataType.Password)]
+			[DataType(DataType.Password)] // Required and data display password = *********
 			public string password { get; set; }
 
 		}

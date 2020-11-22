@@ -34,12 +34,13 @@ namespace Project2_Dimention_Data
             services.AddControllersWithViews();
             services.Configure<AuthOptions>(Configuration);
 
-            var connectionString = Configuration.GetConnectionString("Database");
-            services.AddDbContext<emp_infoContext>(options => options.UseSqlServer(connectionString));
+            var connectionString = Configuration.GetConnectionString("Database"); // Gets the connection string 
+
+            services.AddDbContext<emp_infoContext>(options => options.UseSqlServer(connectionString)); //Gets the connection string
             services.AddScoped<Authenticate>();
             services.AddSingleton<ITempDataProvider, CookieTempDataProvider>();
-            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddTransient<Cryptography>();
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>(); //Loads once 
+            services.AddTransient<Cryptography>(); // Loads multiple times
 
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)

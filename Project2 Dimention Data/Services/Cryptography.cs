@@ -10,24 +10,17 @@ namespace Project2_Dimention_Data.Services
 {
     public class Cryptography
     {
-		public string HashSHA256(string value)
-		{
+		public string PassWordHashing(string value) { //Hashes the encryption key 
 			var sb = new StringBuilder();
-
-			using (var hash = SHA256.Create())
-			{
+			using (var hash = SHA256.Create()) { 
 				var enc = Encoding.UTF8;
 				var result = hash.ComputeHash(enc.GetBytes(value));
-
 				foreach (var b in result)
-					sb.Append(b.ToString("x2"));
-			}
-
-			return sb.ToString();
-		}
+					sb.Append(b.ToString("x2")); }
+			return sb.ToString(); }
 
 
-		public byte[] EncryptStringToBytes_Aes(string plainText, byte[] Key, byte[] IV)
+		public byte[] EncryptStringToBytes_Aes(string plainText, byte[] Key, byte[] IV) // Encrypts session token
 		{
 			if (plainText == null || plainText.Length <= 0)
 				throw new ArgumentNullException("plainText");
@@ -36,34 +29,17 @@ namespace Project2_Dimention_Data.Services
 			if (IV == null || IV.Length <= 0)
 				throw new ArgumentNullException("IV");
 			byte[] encrypted;
-
-			using (Aes aesAlg = Aes.Create())
-			{
-				aesAlg.Key = Key;
-				aesAlg.IV = IV;
-
-	
+			using (Aes aesAlg = Aes.Create()) { 
+				aesAlg.Key = Key; aesAlg.IV = IV;
 				ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
-
-
-				using (MemoryStream msEncrypt = new MemoryStream())
-				{
-					using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
-					{
-						using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
-						{
-
-							swEncrypt.Write(plainText);
-						}
-						encrypted = msEncrypt.ToArray();
-					}
-				}
-			}
-
+				using (MemoryStream msEncrypt = new MemoryStream()) { 
+					using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write)) {
+						using (StreamWriter swEncrypt = new StreamWriter(csEncrypt)) { swEncrypt.Write(plainText); }
+						encrypted = msEncrypt.ToArray();}}}
 			return encrypted;
 		}
 
-		public string DecryptStringFromBytes_Aes(byte[] cipherText, byte[] Key, byte[] IV)
+		public string DecryptStringFromBytes_Aes(byte[] cipherText, byte[] Key, byte[] IV) //Decrypts session token
 		{
 
 			if (cipherText == null || cipherText.Length <= 0)
@@ -72,29 +48,14 @@ namespace Project2_Dimention_Data.Services
 				throw new ArgumentNullException("Key");
 			if (IV == null || IV.Length <= 0)
 				throw new ArgumentNullException("IV");
-
 			string plaintext = null;
-
-			using (Aes aesAlg = Aes.Create())
-			{
-				aesAlg.Key = Key;
-				aesAlg.IV = IV;
-
-
+			using (Aes aesAlg = Aes.Create()) { 
+				aesAlg.Key = Key; aesAlg.IV = IV;
 				ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
-
-				using (MemoryStream msDecrypt = new MemoryStream(cipherText))
-				{
-					using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
-					{
-						using (StreamReader srDecrypt = new StreamReader(csDecrypt))
-						{
-							plaintext = srDecrypt.ReadToEnd();
-						}
-					}
-				}
-			}
-
+				using (MemoryStream msDecrypt = new MemoryStream(cipherText)) { 
+					using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read)) { 
+						using (StreamReader srDecrypt = new StreamReader(csDecrypt)) { 
+							plaintext = srDecrypt.ReadToEnd(); }}}}
 			return plaintext;
 		}
 	}
