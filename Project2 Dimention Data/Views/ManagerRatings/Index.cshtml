@@ -32,7 +32,7 @@
     <tbody>
         @foreach (var item in Model)
         {
-            @if (authInfo.JobRole == "Manager")
+            @if (authInfo.JobRole == "Manager" || authInfo.JobRole == "Admin")
             {
 
                 <tr>

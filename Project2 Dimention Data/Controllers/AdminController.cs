@@ -17,8 +17,8 @@ namespace Project2_Dimention_Data.Controllers
     public class AdminController : Controller
     {
         private readonly emp_infoContext _context;
-        private readonly Cryptography _cryptography;
-        public AdminController(emp_infoContext context, Cryptography cryptography)
+        private readonly Encrypt _cryptography;
+        public AdminController(emp_infoContext context, Encrypt cryptography)
 
         {
             _context = context;
@@ -39,8 +39,8 @@ namespace Project2_Dimention_Data.Controllers
             }
 
             var login = await _context.Logins
-                .Include(l => l.EmpNumNavigation)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .Include(lnfo => lnfo.EmpNumNavigation)
+                .FirstOrDefaultAsync(pull => pull.Id == id);
             if (login == null)
             {
                 return NotFound();
@@ -124,6 +124,7 @@ namespace Project2_Dimention_Data.Controllers
             {
                 try
                 {
+                    login.Passwordhash = _cryptography.PassWordHashing(login.Passwordhash + login.Passwordsalt);
                     _context.Update(login);
                     await _context.SaveChangesAsync();
                 }

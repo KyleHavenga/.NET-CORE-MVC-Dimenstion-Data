@@ -223,3 +223,8 @@ C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\ne
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Salaries\Details.cshtml.g.cs
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Salaries\Edit.cshtml.g.cs
 C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\Salaries\Index.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\EmployeePerfs1\Create.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\EmployeePerfs1\Delete.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\EmployeePerfs1\Details.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\EmployeePerfs1\Edit.cshtml.g.cs
+C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\obj\Debug\netcoreapp3.1\Razor\Views\EmployeePerfs1\Index.cshtml.g.cs

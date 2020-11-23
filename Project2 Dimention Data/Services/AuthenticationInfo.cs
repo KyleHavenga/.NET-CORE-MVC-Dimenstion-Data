@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Project2_Dimention_Data.Services
 {
-    public class AuthInfo
+    public class AuthenticationInfo
     {
         public string id { get; set; }
         public int EmpNum { get; set; }

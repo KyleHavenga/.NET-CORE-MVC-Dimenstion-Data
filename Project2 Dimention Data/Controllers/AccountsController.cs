@@ -18,9 +18,9 @@ namespace Project2_Dimention_Data.Controllers
         }
 
         //Displays the Login Page
-        public IActionResult Login(string returnUrl = null) // Will direct a user to the login page if the login button is clikced
+        public IActionResult Login(string ReturningURL = null) // Will direct a user to the login page if the login button is clikced
         {
-            ViewData["ReturnUrl"] = returnUrl; //Saves the page the user was on when he was redirected to the login page so that the user will be redirected back to that page after logging in
+            ViewData["ReturningURL"] = ReturningURL; //Saves the page the user was on when he was redirected to the login page so that the user will be redirected back to that page after logging in
             return View(); //Redirect to /Accounts/Login.cshtml
         }
 
@@ -28,15 +28,15 @@ namespace Project2_Dimention_Data.Controllers
         //Logs A user in 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Login(AccountLogin model, string returnUrl = null)
+        public IActionResult Login(AccountLogin model, string ReturningURL = null)
         {
-            ViewData["ReturnUrl"] = returnUrl;
+            ViewData["ReturningURL"] = ReturningURL;
             if (ModelState.IsValid)
             {
                 var loggedIn = _authenticate.AuthenticateSignIn(model.email, model.password); //Passes the email and password inserted in the login page to be authenticated
                 if (loggedIn) // Will return true if the user is logged in
                 {
-                    return RedirectToLocal(returnUrl); //Will redirect to the page that you tried to enter before being redirected to the login page
+                    return RedirectToLocal(ReturningURL); //Will redirect to the page that you tried to enter before being redirected to the login page
                 }
                 else
                 {
@@ -59,12 +59,11 @@ namespace Project2_Dimention_Data.Controllers
 
         //Will redirect a user to the home page thus calling the \Home\Index.cshtml
         //Can be found at C:\Users\Kyle\source\repos\IT DEV Project 2\Project2 Dimention Data\Views\Home\Index.cshtml
-        private IActionResult RedirectToLocal(string returnUrl) //Function is called to redirect users
+        private IActionResult RedirectToLocal(string ReturningURL) //Function is called to redirect users
         {
-            if (Url.IsLocalUrl(returnUrl) && !(returnUrl.Contains("Login"))) // If the user clicked on login page directly they will not be redirected to login page again if logged in
-                                                                             // but will be redirected to home page.
+            if (Url.IsLocalUrl(ReturningURL) && !(ReturningURL.Contains("Login"))) // If the user clicked on login page directly they will not be redirected to login page again if logged in but will be redirected to home page.
             {
-                return Redirect(returnUrl);
+                return Redirect(ReturningURL);
             }
             else
             {

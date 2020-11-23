@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Project2_Dimention_Data.Models.Entities.EmployeePerf>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EnvironmentSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RelationshipSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkLifeBalance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpNumberNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnvironmentSat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobSat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RelationshipSat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkLifeBalance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpNumberNavigation.EmpNumber)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmpId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmpId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmpId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

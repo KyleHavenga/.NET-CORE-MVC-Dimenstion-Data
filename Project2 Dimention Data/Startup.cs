@@ -40,7 +40,7 @@ namespace Project2_Dimention_Data
             services.AddScoped<Authenticate>();
             services.AddSingleton<ITempDataProvider, CookieTempDataProvider>();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>(); //Loads once 
-            services.AddTransient<Cryptography>(); // Loads multiple times
+            services.AddTransient<Encrypt>(); // Loads multiple times
 
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
